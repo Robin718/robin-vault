@@ -1,0 +1,1283 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>专家评审费数据库 - Robin的工作空间</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="Robin的工作空间" class="md-header__button md-logo" aria-label="Robin的工作空间" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Robin的工作空间
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              专家评审费数据库
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Robin的工作空间" class="md-nav__button md-logo" aria-label="Robin的工作空间" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Robin的工作空间
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    业务
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    业务
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_业务/01_商机管理/软件工厂_商务机会_20260422.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    商机管理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_业务/02_合同全周期/00_项目总览.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    合同全周期
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_业务/03_客户情报/竞争对手情报.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    客户情报
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_业务/合同台账/公司合同台账.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    合同台账
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    技术
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    技术
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_技术/01_数据库/模板_产品技术.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    数据库
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_技术/03_算法逻辑/模板_算法笔记.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    算法
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    文献
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    文献
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_文献/论文/模板_文献笔记.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    论文
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#200961188" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        项目一：应用软件开发服务采购项目（200961188）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="项目一：应用软件开发服务采购项目（200961188）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        评审内容：需规、技术方案、实施方案
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#200956642" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        项目二：业务系统国产化改造迁移（200956642）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="项目二：业务系统国产化改造迁移（200956642）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2025928" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        评审内容：总体技术方案（2025/9/28）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2025930" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        评审内容：项目实施方案（2025/9/30）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20251029" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        评审内容：需求规格说明（2025/10/29）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20251215" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        评审内容：系统设计说明书（2025/12/15）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20251219" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        评审内容：阶段性测评方案（2025/12/19）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20251229" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        评审内容：阶段性验收（2025/12/29）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#200932714" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        项目三：政工门户网站（200932714）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="项目三：政工门户网站（200932714）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#20251120" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        评审内容：软设、需规（2025/11/20）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        备注
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">专家评审费数据库</h1>
+<blockquote>
+<p>创建：2026-04-22</p>
+</blockquote>
+<h2 id="200961188">项目一：应用软件开发服务采购项目（200961188）</h2>
+<h3 id="_2">评审内容：需规、技术方案、实施方案</h3>
+<table>
+<thead>
+<tr>
+<th>姓名</th>
+<th>身份证号</th>
+<th>开户银行</th>
+<th>银行账号</th>
+<th>金额</th>
+<th>工作单位</th>
+<th>级别</th>
+<th>专业</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>宇然</td>
+<td>210102196907265010</td>
+<td>工行沈阳大西支行</td>
+<td>6222033301013691131</td>
+<td>2400</td>
+<td></td>
+<td>高级工程师</td>
+<td>档案学</td>
+</tr>
+<tr>
+<td>吕少卿</td>
+<td>370203197304089012</td>
+<td>工商银行北京北太平庄支行</td>
+<td>6212260200078725336</td>
+<td>2400</td>
+<td></td>
+<td>研究员</td>
+<td>装备保障</td>
+</tr>
+<tr>
+<td>李劼</td>
+<td>51010519770629301X</td>
+<td>中国工商银行北京海淀支行</td>
+<td>9558800200139990879</td>
+<td>2400</td>
+<td></td>
+<td>研究员</td>
+<td>通信工程</td>
+</tr>
+<tr>
+<td>郝二伟</td>
+<td>41088119820227753X</td>
+<td>中国银行北京西翠路支行</td>
+<td>6217890100001154280</td>
+<td>2400</td>
+<td></td>
+<td>高级工程师</td>
+<td>通信保障</td>
+</tr>
+<tr>
+<td>张林林</td>
+<td>130204198802111821</td>
+<td>招商银行北京西客站支行</td>
+<td>6214831090712271</td>
+<td>2400</td>
+<td></td>
+<td>工程师</td>
+<td>计算机科学与技术</td>
+</tr>
+</tbody>
+</table>
+<p><strong>小计：12,000元</strong></p>
+<hr />
+<h2 id="200956642">项目二：业务系统国产化改造迁移（200956642）</h2>
+<h3 id="2025928">评审内容：总体技术方案（2025/9/28）</h3>
+<table>
+<thead>
+<tr>
+<th>姓名</th>
+<th>工作单位</th>
+<th>级别</th>
+<th>金额</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>赵东升</td>
+<td>军事科学院军事医学研究院</td>
+<td>研究员</td>
+<td>800</td>
+</tr>
+<tr>
+<td>高生华</td>
+<td>联勤保障部队军事运输投送综合协调中心信息保障室</td>
+<td>高级工程师</td>
+<td>800</td>
+</tr>
+<tr>
+<td>李刚</td>
+<td>北京市疾控中心</td>
+<td>主任医师</td>
+<td>800</td>
+</tr>
+<tr>
+<td>蒋正杰</td>
+<td>空军特色医学中心</td>
+<td>副主任医师</td>
+<td>800</td>
+</tr>
+<tr>
+<td>王先文</td>
+<td>联勤保障部队药品仪器检验监督总站</td>
+<td>高级工程师</td>
+<td>800</td>
+</tr>
+<tr>
+<td>季磊</td>
+<td>解放军总医院医疗保障中心</td>
+<td>高级工程师</td>
+<td>800</td>
+</tr>
+<tr>
+<td>李鹏</td>
+<td>军事科学院军事医学研究院</td>
+<td>副研究员</td>
+<td>800</td>
+</tr>
+</tbody>
+</table>
+<p><strong>小计：5,600元</strong></p>
+<h3 id="2025930">评审内容：项目实施方案（2025/9/30）</h3>
+<table>
+<thead>
+<tr>
+<th>姓名</th>
+<th>工作单位</th>
+<th>级别</th>
+<th>金额</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>高生华</td>
+<td>联勤保障部队军事运输投送综合协调中心信息保障室</td>
+<td>高级工程师</td>
+<td>800</td>
+</tr>
+<tr>
+<td>李刚</td>
+<td>北京市疾控中心</td>
+<td>主任医师</td>
+<td>800</td>
+</tr>
+<tr>
+<td>蒋正杰</td>
+<td>空军特色医学中心</td>
+<td>副主任医师</td>
+<td>800</td>
+</tr>
+<tr>
+<td>王先文</td>
+<td>联勤保障部队药品仪器检验监督总站</td>
+<td>高级工程师</td>
+<td>800</td>
+</tr>
+<tr>
+<td>季磊</td>
+<td>解放军总医院医疗保障中心</td>
+<td>高级工程师</td>
+<td>800</td>
+</tr>
+<tr>
+<td>李鹏</td>
+<td>军事科学院军事医学研究院</td>
+<td>副研究员</td>
+<td>800</td>
+</tr>
+</tbody>
+</table>
+<p><strong>小计：4,800元</strong></p>
+<h3 id="20251029">评审内容：需求规格说明（2025/10/29）</h3>
+<table>
+<thead>
+<tr>
+<th>姓名</th>
+<th>工作单位</th>
+<th>级别</th>
+<th>金额</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>赵东升</td>
+<td>军事科学院军事医学研究院</td>
+<td>研究员</td>
+<td>800</td>
+</tr>
+<tr>
+<td>高生华</td>
+<td>联勤保障部队军事运输投送综合协调中心信息保障室</td>
+<td>高级工程师</td>
+<td>800</td>
+</tr>
+<tr>
+<td>刘洋</td>
+<td>北京市疾病预防控制中心</td>
+<td>副主任医师</td>
+<td>800</td>
+</tr>
+<tr>
+<td>蒋正杰</td>
+<td>空军特色医学中心</td>
+<td>副主任医师</td>
+<td>800</td>
+</tr>
+<tr>
+<td>王先文</td>
+<td>联勤保障部队药品仪器检验监督总站</td>
+<td>高级工程师</td>
+<td>800</td>
+</tr>
+<tr>
+<td>任皓</td>
+<td>解放军总医院医疗保障中心</td>
+<td>高级工程师</td>
+<td>800</td>
+</tr>
+<tr>
+<td>李鹏</td>
+<td>军事科学院军事医学研究院</td>
+<td>副研究员</td>
+<td>800</td>
+</tr>
+</tbody>
+</table>
+<p><strong>小计：5,600元</strong></p>
+<h3 id="20251215">评审内容：系统设计说明书（2025/12/15）</h3>
+<table>
+<thead>
+<tr>
+<th>姓名</th>
+<th>工作单位</th>
+<th>级别</th>
+<th>金额</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>赵东升</td>
+<td>军事科学院军事医学研究院</td>
+<td>研究员</td>
+<td>800</td>
+</tr>
+<tr>
+<td>高生华</td>
+<td>联勤保障部队军事运输投送综合协调中心信息保障室</td>
+<td>高级工程师</td>
+<td>800</td>
+</tr>
+<tr>
+<td>刘洋</td>
+<td>北京市疾病预防控制中心</td>
+<td>副主任医师</td>
+<td>800</td>
+</tr>
+<tr>
+<td>蒋正杰</td>
+<td>空军特色医学中心</td>
+<td>副主任医师</td>
+<td>800</td>
+</tr>
+<tr>
+<td>李达</td>
+<td>解放军总医院第一医学中心</td>
+<td>高级工程师</td>
+<td>800</td>
+</tr>
+<tr>
+<td>石金龙</td>
+<td>解放军总医院创新研究部</td>
+<td>高级工程师</td>
+<td>800</td>
+</tr>
+<tr>
+<td>李鹏</td>
+<td>军事科学院军事医学研究院</td>
+<td>副研究员</td>
+<td>800</td>
+</tr>
+</tbody>
+</table>
+<p><strong>小计：5,600元</strong></p>
+<h3 id="20251219">评审内容：阶段性测评方案（2025/12/19）</h3>
+<table>
+<thead>
+<tr>
+<th>姓名</th>
+<th>工作单位</th>
+<th>级别</th>
+<th>金额</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>赵东升</td>
+<td>军事科学院军事医学研究院</td>
+<td>研究员</td>
+<td>800</td>
+</tr>
+<tr>
+<td>高生华</td>
+<td>联勤保障部队军事运输投送综合协调中心信息保障室</td>
+<td>高级工程师</td>
+<td>800</td>
+</tr>
+<tr>
+<td>刘洋</td>
+<td>北京市疾病预防控制中心</td>
+<td>副主任医师</td>
+<td>800</td>
+</tr>
+<tr>
+<td>蒋正杰</td>
+<td>空军特色医学中心</td>
+<td>副主任医师</td>
+<td>800</td>
+</tr>
+<tr>
+<td>李达</td>
+<td>解放军总医院第一医学中心</td>
+<td>高级工程师</td>
+<td>800</td>
+</tr>
+<tr>
+<td>石金龙</td>
+<td>解放军总医院创新研究部</td>
+<td>高级工程师</td>
+<td>800</td>
+</tr>
+<tr>
+<td>李鹏</td>
+<td>军事科学院军事医学研究院</td>
+<td>副研究员</td>
+<td>800</td>
+</tr>
+</tbody>
+</table>
+<p><strong>小计：5,600元</strong></p>
+<h3 id="20251229">评审内容：阶段性验收（2025/12/29）</h3>
+<table>
+<thead>
+<tr>
+<th>姓名</th>
+<th>工作单位</th>
+<th>级别</th>
+<th>金额</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>赵东升</td>
+<td>军事科学院军事医学研究院</td>
+<td>研究员</td>
+<td>800</td>
+</tr>
+<tr>
+<td>高生华</td>
+<td>联勤保障部队军事运输投送综合协调中心信息保障室</td>
+<td>高级工程师</td>
+<td>800</td>
+</tr>
+<tr>
+<td>刘洋</td>
+<td>北京市疾病预防控制中心</td>
+<td>副主任医师</td>
+<td>800</td>
+</tr>
+<tr>
+<td>蒋正杰</td>
+<td>空军特色医学中心</td>
+<td>副主任医师</td>
+<td>800</td>
+</tr>
+<tr>
+<td>贾晓东</td>
+<td>中国人民解放军总医院第五医学中心</td>
+<td>副研究员</td>
+<td>800</td>
+</tr>
+<tr>
+<td>李鹏</td>
+<td>军事科学院军事医学研究院</td>
+<td>副研究员</td>
+<td>800</td>
+</tr>
+<tr>
+<td>乔宇</td>
+<td>北京资金集中收付管理中心</td>
+<td>中级会计师</td>
+<td>800</td>
+</tr>
+</tbody>
+</table>
+<p><strong>小计：5,600元</strong></p>
+<hr />
+<h2 id="200932714">项目三：政工门户网站（200932714）</h2>
+<h3 id="20251120">评审内容：软设、需规（2025/11/20）</h3>
+<table>
+<thead>
+<tr>
+<th>姓名</th>
+<th>身份证号</th>
+<th>开户银行</th>
+<th>金额</th>
+<th>工作单位</th>
+<th>级别</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>赵为春</td>
+<td>220102197202052628</td>
+<td>中国工商银行西三旗支行</td>
+<td>1600</td>
+<td>原93216部队</td>
+<td>高级工程师</td>
+</tr>
+<tr>
+<td>于泓峰</td>
+<td>220882199103234513</td>
+<td>交通银行北京海淀支行</td>
+<td>1600</td>
+<td>中国科学院空天信息创新研究院</td>
+<td>副研究员</td>
+</tr>
+<tr>
+<td>靳鹏</td>
+<td>142231197411160034</td>
+<td>工行中关村小营西路支行</td>
+<td>1600</td>
+<td>原96618部队</td>
+<td>高级工程师</td>
+</tr>
+<tr>
+<td>丁春宝</td>
+<td>372527198111233712</td>
+<td>光大银行</td>
+<td>1600</td>
+<td>大唐联诚信息技术有限公司</td>
+<td>高级工程师</td>
+</tr>
+</tbody>
+</table>
+<p><strong>小计：6,400元</strong></p>
+<hr />
+<h2 id="_3">备注</h2>
+<ul>
+<li>专家评审费支付需附专家身份证号、银行账号、工作单位和职称</li>
+<li>建议按项目归档，方便查找复用</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
